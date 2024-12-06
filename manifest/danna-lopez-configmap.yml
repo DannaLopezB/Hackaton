@@ -1,0 +1,19 @@
+# kubectl apply -f danna-lopez-configmap.yml
+apiVersion: v1
+kind: configmap
+metadata:
+  name: database-credentials
+  namespace: danna-lopez-namespace
+type: Opaque
+data:
+  DATABASE_URL: cjJkYmM6cG9zdGdyZXNxbDovL2VwLW11ZGR5LWR1c3QtYTUyZmNrdmsudXMtZWFzdC0yLmF3cy5uZW9uLnRlY2g6NTQzMi9uZW9uZGI/c3NsbW9kZT1yZXF1aXJl   # en Base64
+  DATABASE_USERNAME: ZGFubmFsb3Bleg==   # en Base64
+  DATABASE_PASSWORD: ZGNrcl9wYXRfYzYyWjJFc3FFVkNsU2RiWWpfczFKOWNZZTU0   # en Base64
+  #API_BACKEND: aHR0cHM6Ly9leHBlcnQtc3BhY2Utc3Bvb24tcXdxOXE0NXA3cTkyOTctODA4NS5hcHAuZ2l0aHViLmRldi9jaWNsb1ZpZGE=
+  #DATABASE_URL: ${DATABASE_URL}   # en Base64
+  #DATABASE_USERNAME: ${DATABASE_USERNAME}   # en Base64
+  #DATABASE_PASSWORD: ${DATABASE_PASSWORD}   # en Base64
+  #API_KEY: ${API_KEY}   # en Base64
+
+#echo -n "demo123" | base64
+#echo "ZGVtbzEyMw==" | base64 --decode
